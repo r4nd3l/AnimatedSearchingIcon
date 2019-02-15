@@ -1,0 +1,132 @@
+/* Default DevCorner Style Setting */
+
+:root{
+  --dc-: #28a745;
+  --gr-: #515151;
+  --shadow-: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.fa-code{
+  color: var(--dc-);
+}
+
+/* .center{
+  width: 50%;
+  margin: 0 auto;
+} */
+
+.brand{
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 5px;
+  font-family: Roboto;
+  z-index: 1;
+  font-size: 3em;
+}
+
+p{
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+body{
+  background: url(../img/img_10.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%);
+}
+
+.search-box input{
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.search-box input:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+}
+
+.search-box input:hover:focus{
+  cursor: text;
+}
+
+.search-box input:hover + span{
+  background: rgba(255,255,255,0.2);
+}
+
+.search-box input:focus{
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  background: none;
+  color: var(--dc-);
+}
+
+.search-box input:focus + span{
+  width: 200px;
+}
+
+.search-box input:focus + span::before{
+  width: 2px;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.search-box input + span{
+  z-index: -1;
+  position: absolute;
+  border: 2px solid var(--dc-);
+  top: 0;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  border-radius: 25px;
+  left: 0;
+}
+
+.search-box input + span::before{
+  transition: all 0.25s ease-in 0.25s;
+  transform-origin: left top;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--dc-);
+  transform: rotate(45deg) translate(26px, -2px);
+}
+
+
+
+
+
+
+
+
+
+
+/* End */
